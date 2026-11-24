@@ -1,0 +1,194 @@
+{
+  "created": "2026-11-23T20:15:56.098993-08:00",
+  "description": "Source-only CPU SIMD optimization of the same two-scan first-hit/witness construction; native executables rebuilt locally.",
+  "files": {
+    "README.md": {
+      "bytes": 11438,
+      "sha256": "9840ceda1d5ff50b4501b2a098421d7c9d03be269c270407eb5cb40dfbc0c1a3"
+    },
+    "RESULTS.md": {
+      "bytes": 11421,
+      "sha256": "5cd75b757534c4c0a4b849a07066f53c32ef938eb25e80ba6308392029d39c58"
+    },
+    "WITNESS_MASKS.md": {
+      "bytes": 2892,
+      "sha256": "1f3a15186a47d74c5a761927bef56afef31ebc2998c0925467e29780f0468624"
+    },
+    "parser.hpp": {
+      "bytes": 3453,
+      "sha256": "2bba16f5246268678818550c0b0a1bb7c26359782c9db9d8987e949f5f3c02a0"
+    },
+    "parser.cpp": {
+      "bytes": 29374,
+      "sha256": "e7c6c24dcecc881a65caebc6df906612930ecfea98a1b4f9720c454411d0ee10"
+    },
+    "bench.cpp": {
+      "bytes": 13515,
+      "sha256": "01a0a31d4f5dffe7de1cc4d91b00dfd3cbda538b9b08f0258eda0049879adf85"
+    },
+    "batch_bench.cpp": {
+      "bytes": 7417,
+      "sha256": "45ff82e612380852cb579a0e8d4057a38c509b17121f7e690eee3667ab2732fb"
+    },
+    "build.py": {
+      "bytes": 1257,
+      "sha256": "ee422e96b388be2522ee13dcdf58a18e04f270a58b55eafe0a86715556feac3f"
+    },
+    "run_experiments.py": {
+      "bytes": 3731,
+      "sha256": "e31fb9a7d541fb1fe8d831f92b06d901da2fa116d5cfb3b9bc4a2ecbd60e4f5b"
+    },
+    "simd_parser.py": {
+      "bytes": 2879,
+      "sha256": "544f6e9c737d900503c90433634358fa7e0cab50b07d3d8cfee3af10ffc8c3e9"
+    },
+    "verify_reference.py": {
+      "bytes": 2061,
+      "sha256": "50c96bb5e99c6d965de3939e6eef5e8cfda51800dd8f3373570fe5bcf4f0bbb3"
+    },
+    "verify_concurrency.py": {
+      "bytes": 1161,
+      "sha256": "ddfbaedc45557799ac521a791a0c872c1030147aa752248760eaefa7b84d6dfa"
+    },
+    "reference/linear_scan.py": {
+      "bytes": 7588,
+      "sha256": "d33b1d418921d228634db56022ba64703c64c653cf4d21d0cd10aac9aa3729ea"
+    },
+    "reference/peak_statements.py": {
+      "bytes": 24138,
+      "sha256": "0c94e7b4729226c9a2be3b997a2b7182f25633d18b9e77efd0833b101f8d4ea3"
+    },
+    "reference/peak_summaries.py": {
+      "bytes": 17436,
+      "sha256": "9de31b13ed65ce52bec899ad19cfa899f5b9ca5f8c1869bc59784d8f672ece37"
+    },
+    "reference/ranked_merge_reference.py": {
+      "bytes": 36131,
+      "sha256": "6ba6310d9439e8a425a63a342b4b85f715bfa3dac3639a810ef310ffd4e45cb3"
+    },
+    "results/allocation.csv": {
+      "bytes": 8687,
+      "sha256": "c2e93d9be756eebd1dda374ee4cd2b1b8252449798c795fcf359e37effa171c6"
+    },
+    "results/allocation.txt": {
+      "bytes": 8687,
+      "sha256": "c2e93d9be756eebd1dda374ee4cd2b1b8252449798c795fcf359e37effa171c6"
+    },
+    "results/asan_verification.txt": {
+      "bytes": 136,
+      "sha256": "c457046d7a8308ddb20d5639ec95a410ed673045f0d1481066dfe91a94dd0566"
+    },
+    "results/batches.csv": {
+      "bytes": 12117,
+      "sha256": "7018f53f608559f3b8400ff4b698c4f7a902818cebee1306a53092516ded4ac9"
+    },
+    "results/batches.txt": {
+      "bytes": 4287,
+      "sha256": "69f0cafb7b26c2296dc3b024355ea8f0502ae428ce652179f911f8bf4fdba0eb"
+    },
+    "results/benchmark.json": {
+      "bytes": 400091,
+      "sha256": "dcdc157daafac86770fa08e33e619cda5a00a8b2842a30de77a189e2b6a1fcb9"
+    },
+    "results/build.txt": {
+      "bytes": 927,
+      "sha256": "916e5651a460ee718b6c29be2c9a0ec871b0b551c354db07d56b46966bbbe116"
+    },
+    "results/build_asan.txt": {
+      "bytes": 1188,
+      "sha256": "4f7103f713768d1d2819eb18ebd6f80200c07680eeb319d0cf36fae5fd293680"
+    },
+    "results/build_ubsan.txt": {
+      "bytes": 1167,
+      "sha256": "6c90783b8bf6a3557a9f9dbe8502ae64a80076d50332de506668f320852abf6e"
+    },
+    "results/concurrency.json": {
+      "bytes": 118,
+      "sha256": "fef3c7281c5f4864ca0b3dc77cc0b01ea7acd5c64f3007fe3da11d4cc85bb14c"
+    },
+    "results/concurrency.txt": {
+      "bytes": 106,
+      "sha256": "94345393b0aa6ad4fd95e42a75204038e3c0efb48a1876851d07cf589b7c5541"
+    },
+    "results/cpp_verification.txt": {
+      "bytes": 136,
+      "sha256": "c457046d7a8308ddb20d5639ec95a410ed673045f0d1481066dfe91a94dd0566"
+    },
+    "results/large.csv": {
+      "bytes": 33705,
+      "sha256": "c1046436eb1fd25037b3e4f670ca2a83a80d828e66664a9f2bf44ee46900e914"
+    },
+    "results/large.txt": {
+      "bytes": 33705,
+      "sha256": "c1046436eb1fd25037b3e4f670ca2a83a80d828e66664a9f2bf44ee46900e914"
+    },
+    "results/large_repeat.csv": {
+      "bytes": 5744,
+      "sha256": "b8b9cdcd921fd5963799b21bc2a032d314f6fd556743ddcd22e1a4d45c466f55"
+    },
+    "results/large_repeat.txt": {
+      "bytes": 5744,
+      "sha256": "b8b9cdcd921fd5963799b21bc2a032d314f6fd556743ddcd22e1a4d45c466f55"
+    },
+    "results/large_repeat_metadata.json": {
+      "bytes": 13676,
+      "sha256": "68e30d4cc5cc26a109e348af766ae37eeb4e97786cc4493797139ab2d4727f7b"
+    },
+    "results/large_used_states.csv": {
+      "bytes": 11379,
+      "sha256": "34b87063f2c58ba705383ad9d3b7b31999aeaacea0dab23d50e04e7c4ca74617"
+    },
+    "results/large_used_states.txt": {
+      "bytes": 11379,
+      "sha256": "34b87063f2c58ba705383ad9d3b7b31999aeaacea0dab23d50e04e7c4ca74617"
+    },
+    "results/python_verification.json": {
+      "bytes": 175,
+      "sha256": "b377cad317ab3a7d357e18c18dec2dfa17d6a55055b94efcad19e489ed772d5b"
+    },
+    "results/python_verification.txt": {
+      "bytes": 203,
+      "sha256": "c49476b10580ebef79cfc8e8a15e3e2402836b8b9f1a6e3e7ff63f6bd6ed4f50"
+    },
+    "results/small_latency.csv": {
+      "bytes": 36016,
+      "sha256": "5c88346056bdb5fc705737a10863df273673ef4f926344fa5c587900890148d1"
+    },
+    "results/small_latency.txt": {
+      "bytes": 36016,
+      "sha256": "5c88346056bdb5fc705737a10863df273673ef4f926344fa5c587900890148d1"
+    },
+    "results/small_used_states.csv": {
+      "bytes": 35962,
+      "sha256": "f4732c9c4e262b23f8209ebc81ef3ea2857a5ce3c40d028389653bc30169a6a2"
+    },
+    "results/small_used_states.txt": {
+      "bytes": 35962,
+      "sha256": "f4732c9c4e262b23f8209ebc81ef3ea2857a5ce3c40d028389653bc30169a6a2"
+    },
+    "results/tune_spin0.csv": {
+      "bytes": 1578,
+      "sha256": "3e05b62e01b45f7cc3b45b0658684f4fde32b6087b27d2917845029034594839"
+    },
+    "results/tune_spin0.txt": {
+      "bytes": 1578,
+      "sha256": "3e05b62e01b45f7cc3b45b0658684f4fde32b6087b27d2917845029034594839"
+    },
+    "results/tune_spin1000.csv": {
+      "bytes": 1578,
+      "sha256": "b3a7cddbe74251cb377914345cc2c4f311398af358759c60469e0f82cdaf0169"
+    },
+    "results/tune_spin1000.txt": {
+      "bytes": 1578,
+      "sha256": "b3a7cddbe74251cb377914345cc2c4f311398af358759c60469e0f82cdaf0169"
+    },
+    "results/tuning_metadata.json": {
+      "bytes": 12495,
+      "sha256": "f356bfa0cffce05b36c6c9d3dc823885be35995abdff21b8e48e6f6f6cf9bfdd"
+    },
+    "results/ubsan_verification.txt": {
+      "bytes": 136,
+      "sha256": "c457046d7a8308ddb20d5639ec95a410ed673045f0d1481066dfe91a94dd0566"
+    }
+  }
+}

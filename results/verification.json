@@ -1,0 +1,20 @@
+{
+  "scan_sequences": 2000,
+  "normalized_groups": 18175,
+  "random_groups": 9000,
+  "supplied_encodings": 1070,
+  "programs": 20000,
+  "accepted": 7951,
+  "rejected": 12049,
+  "frontend_programs": 20000,
+  "source_programs": 690,
+  "passed": true,
+  "metadata_cases": 9,
+  "deep_chain_repetitions": [
+    50,
+    400,
+    3000,
+    16384
+  ],
+  "elapsed_seconds": 41.78
+}

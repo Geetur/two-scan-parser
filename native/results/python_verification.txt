@@ -1,0 +1,2 @@
+Python exact graph comparisons: 10175 10684
+{"passed": true, "normalized_groups": 10175, "native_calls": 10684, "programs": 1000, "accepted": 384, "rejected": 616, "elapsed_seconds": 3.1422167690002425}

@@ -1,0 +1,6 @@
+Scan equivalence: 2,000 arbitrary table sequences passed
+Exhaustive groups: 9,175 exact plans and AST/rejection results passed
+Random mixed fixities and independent powers: 9,000 groups passed
+Whole programs: 20,000 match original and recursive descent
+Deep chains through 16,384 repetitions passed
+{"scan_sequences": 2000, "normalized_groups": 18175, "random_groups": 9000, "supplied_encodings": 1070, "programs": 20000, "accepted": 7951, "rejected": 12049, "frontend_programs": 20000, "source_programs": 690, "passed": true, "metadata_cases": 9, "deep_chain_repetitions": [50, 400, 3000, 16384], "elapsed_seconds": 36.25}

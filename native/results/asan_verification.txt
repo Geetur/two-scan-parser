@@ -1,0 +1,1 @@
+PASS 8133 input groups; 66744 scalar/SIMD/thread configurations; all pop, next, parent, left, right and roots match independent oracle.

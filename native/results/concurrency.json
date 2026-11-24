@@ -1,0 +1,7 @@
+{
+  "passed": true,
+  "calls": 24,
+  "callers": 4,
+  "requested_workers_per_call": 2,
+  "operators_per_call": 10000
+}
